@@ -16,7 +16,7 @@ $plugin = null;
 $admin_plugins = $gpf->getAdminPlugins();
 foreach($admin_plugins as $idx => $pl)
 {
-	if($pl['obj']->id == $p)
+	if($pl['obj']->id == $p && $pl['id'] == $c)
 	{
 		$plugin = $pl;
 	}
@@ -26,10 +26,15 @@ if(!$plugin) {
 	alert("잘못된 접근");
 }
 
-
 $g4['title'] = "플러그인설정 - " . $plugin['label'];
 
 $handler = $plugin['handler'];
+
+if($nolayout)
+{
+	$plugin['obj']->$handler();
+	exit;
+}
 
 gpf_trigger("GPF_ADMIN_HEAD");
 

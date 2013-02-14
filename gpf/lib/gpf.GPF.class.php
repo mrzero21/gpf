@@ -204,12 +204,12 @@ class GPF
 	 * @param obj $obj {@link GPFPluginAdmin} 객체
 	 * @param string $handler $obj 내에 구현된 이벤트 핸들러
 	 */
-	public function addAdmin($label, $obj, $handler)
+	public function addAdmin($menu_id, $label, $obj, $handler)
 	{
 		if(!is_a($obj, "GPFPlugin")) gpf_die("GPF 에는 GPFPlugin 클래스를 상속한 인스턴스만 사용가능합니다.");
 		$id = $obj->id;
 		$order = ($this->cfg->plugin_order[$id] ? $this->cfg->plugin_order[$id] : 99999);
-		$this->admins[] = array("label"=>$label, "obj"=>$obj, "handler"=>$handler, "order"=>$order);
+		$this->admins[] = array("id"=>$menu_id, "label"=>$label, "obj"=>$obj, "handler"=>$handler, "order"=>$order);
 	}
 
 	/**
@@ -285,6 +285,15 @@ class GPF
 		if(is_array($h)) return call_user_func_array(array($h['obj'],$h['func']), $args);		
 		echo("GPF 에 등록되지 않은 메소드를 호출하였습니다 : '$method'");
 	}	
+
+	/**
+	 *
+	 * 헬퍼함수가 존재하는가?
+	 */
+	public function hasHelper($name)
+	{
+		return isset($this->helpers[$name]);
+	}
 
 
 	//////////////////////////////////////////////////////////
