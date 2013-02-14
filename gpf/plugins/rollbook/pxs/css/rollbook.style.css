@@ -1,0 +1,108 @@
+
+#rb_content {
+	position : relative;
+}
+
+/* Button Reset */
+.button,
+.button a,
+.button button,
+.button input { position:relative; margin:0; display:-moz-inline-stack; display:inline-block; text-decoration:none !important; border:0; font-size:12px; font-family:Tahoma, Sans-serif; white-space:nowrap; background:url(./button/buttonWhite.png) no-repeat; overflow:visible; color:#333;}
+.button { height:23px; padding:0; vertical-align:middle; margin-right:2px; background-position:left top;}
+.button a,
+.button button,
+.button input{ left:2px; vertical-align:top; cursor:pointer;}
+
+
+
+/* Button Size */
+.button.large { height:29px; background-position:left -30px; }
+.button.xLarge { height:35px; background-position:left -65px; }
+.button.small { height:18px; background-position:left -107px; }
+.button a,
+.button button,
+.button input { height:23px; padding:0 10px 0 8px; font-size:12px; line-height:23px; background-position:right top;}
+.button.large a,
+.button.large button,
+.button.large input { height:30px; padding:0 10px 0 8px; font-size:16px; line-height:29px; background-position:right -30px;}
+.button.xLarge a,
+.button.xLarge button,
+.button.xLarge input { height:35px; padding:0 10px 0 8px; font-size:20px; line-height:35px; background-position:right -65px;}
+.button.small a,
+.button.small button,
+.button.small input { height:18px; padding:0 6px 0 4px; font-size:11px; line-height:18px; background-position:right -107px;}
+
+/* Button Text Color */
+.button *:hover,
+.button *:active,
+.button *:focus{ color:#690;}
+
+.button.green,
+.button.green a,
+.button.green a:visited,
+.button.green button,
+.button.green input { background-image:url(./button/buttonGreen.png); color:#fff;}
+.button.green *:hover,
+.button.green *:active,
+.button.green *:focus{ color:#ff0;}
+
+.button.black,
+.button.black a,
+.button.black button,
+.button.black a:visited,
+.button.black input { background-image:url(./button/buttonBlack.png); color:#fff;}
+.button.black *:hover,
+.button.black *:active,
+.button.black *:focus{ color:#ff0;}
+
+.button.red,
+.button.red a,
+.button.red a:visited,
+.button.red button,
+.button.red input { background-image:url(./button/buttonRed.png); color:#fff;}
+.button.red *:hover,
+.button.red *:active,
+.button.red *:focus{ color:#ff0;}
+
+.button.blue,
+.button.blue a,
+.button.blue a:visited,
+.button.blue button,
+.button.blue input { background-image:url(./button/buttonBlue.png); color:#fff;}
+.button.blue *:hover,
+.button.blue *:active,
+.button.blue *:focus{ color:#ff0;}
+
+.button.purple,
+.button.purple a,
+.button.purple a:visited,
+.button.purple button,
+.button.purple input { background-image:url(./button/buttonPurple.png); color:#fff;}
+.button.purple *:hover,
+.button.purple *:active,
+.button.purple *:focus{ color:#ff0;}
+
+.button.yellow,
+.button.yellow a,
+.button.yellow a:visited,
+.button.yellow button,
+.button.yellow input { background-image:url(./button/buttonYellow.png); color:#555;}
+.button.yellow *:hover,
+.button.yellow *:active,
+.button.yellow *:focus{ color:#ff0;}
+
+/* Button Text Strong */
+.button.strong * { font-weight:bold !important;}
+
+
+.ui-datepicker { font:12px dotum; display:none;}
+.ui-datepicker select.ui-datepicker-month, 
+.ui-datepicker select.ui-datepicker-year { width: 70px;}
+.ui-datepicker-trigger { margin:0 0 -5px 2px; }
+
+
+html {overflow: -moz-scrollbars-vertical; overflow-y: scroll; overflow-x:hidden}
+.clear:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clear { display: inline-block; }
+html[xmlns] .clear { display: block; }
+* html .clear { height: 1%; }

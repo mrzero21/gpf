@@ -1,0 +1,5 @@
+<!-- QR CODE 출력 -->
+<div style="margin:10px 0; text-align:right">
+[QRCODE]
+</div>
+<!--// QR CODE 출력 -->
