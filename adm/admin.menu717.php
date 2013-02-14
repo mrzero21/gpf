@@ -22,7 +22,7 @@ if($gpf->hasAdminPlugins())
 		
 		array_push($menu["menu717"], array("", $v['label'], "{$g4['admin_path']}/gpf/admin.php?p=".$v['obj']->id."&c=".$v['id']));
 	
-		if( ($admin_cnt > 3 && $prev['obj']->id != $v['obj']->id && $next && $v['obj']->id != $next['obj']->id) || ($next && $v['obj']->id != $next['obj']->id && gpf_same_admin_count($gpf_admins, $i+1) >= 3) ) 
+		if( ($admin_cnt > 3 && ( $prev['obj']->id != $v['obj']->id || $next && $v['obj']->id != $next['obj']->id) ) || ($next && $v['obj']->id != $next['obj']->id && gpf_same_admin_count($gpf_admins, $i+1) >= 3) ) 
 		{
 			array_push($menu["menu717"], array("-"));
 			$admin_cnt = 0;
