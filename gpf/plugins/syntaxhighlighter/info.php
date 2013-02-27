@@ -17,10 +17,10 @@ class GPFPluginInfoSyntaxhighlighter extends GPFPluginInfo
 	public function __construct() {				
 		parent::__construct();
 
-		$this->version = "2013-01-17";
+		$this->version = "2013-02-27";
 		$this->author_name = "byfun";
 		$this->author_homepage = "http://byfun.com";
-		$this->plugin_link = "http://byfun.com/axis/gpf_plugin.php?plugin=syntaxhighlighter";
+		$this->plugin_link = "http://lovelyus.net/axis/gpf_plugin.php?plugin=문법강조";
 
 		$this->label = "문법강조(SyntaxHighlighter)";
 	}

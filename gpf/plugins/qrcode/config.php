@@ -3,7 +3,7 @@
  * 
  * QR코드 플러그인 환경설정 스크립트
  * 
- * @license LGPL (http://www.gnu.org/licenses/lgpl.html)
+ * @license GPL2 (http://www.gnu.org/licenses/gpl-2.0.html)
  * @author	chongmyung.park (http://byfun.com)
  */
 

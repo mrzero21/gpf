@@ -18,10 +18,10 @@ class GPFPluginInfoThumbnail extends GPFPluginInfo
 		
 		parent::__construct();
 
-		$this->version = "2013-01-17";
+		$this->version = "2013-02-27";
 		$this->author_name = "byfun";
 		$this->author_homepage = "http://byfun.com";
-		$this->plugin_link = "http://byfun.com/axis/gpf_plugin.php?plugin=thumbnail";
+		$this->plugin_link = "http://lovelyus.net/axis/gpf_plugin.php?plugin=썸네일";
 		
 		$this->label = "썸네일(Thumbnail)";
 	}

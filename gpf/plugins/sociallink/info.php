@@ -19,10 +19,10 @@ class GPFPluginInfoSociallink extends GPFPluginInfo
 	public function __construct() {				
 		parent::__construct();
 
-		$this->version = "2013-01-17";
+		$this->version = "2013-02-27";
 		$this->author_name = "byfun";
 		$this->author_homepage = "http://byfun.com";
-		$this->plugin_link = "http://byfun.com/axis/gpf_plugin.php?plugin=sociallink";
+		$this->plugin_link = "http://lovelyus.net/axis/gpf_plugin.php?plugin=소셜링크";
 
 		$this->label = "소셜링크(Social Link)";
 	}

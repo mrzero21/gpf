@@ -4,6 +4,7 @@
  * 출석부 플러그인
  *
  * 본 프로그램의 수정후 재배포를 금합니다.
+ *
  * @author	byfun (http://byfun.com)
  */
 

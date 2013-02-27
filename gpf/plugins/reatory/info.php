@@ -3,8 +3,7 @@
  * 
  * 리토리(Read History) 플러그인 정보 클래스
  *
- *
- * @license LGPL (http://www.gnu.org/licenses/lgpl.html)
+ * @license GPL2 (http://www.gnu.org/licenses/gpl-2.0.html)
  * @author	chongmyung.park (http://byfun.com)
  */
 
@@ -20,10 +19,10 @@ class GPFPluginInfoReatory extends GPFPluginInfo
 	public function __construct() {				
 		parent::__construct();
 	
-		$this->version = "2013-01-23";
+		$this->version = "2013-02-27";
 		$this->author_name = "byfun";
 		$this->author_homepage = "http://byfun.com";
-		$this->plugin_link = "http://byfun.com/axis/gpf_plugin.php?plugin=reatory";
+		$this->plugin_link = "http://lovelyus.net/axis/gpf_plugin.php?plugin=reatory";
 
 		$this->label = "리토리 (Read History)";
 	}

@@ -1,7 +1,7 @@
 <?
 /**
  * 
- * 문법 강조(Syntax Highlighter) 플러그인 클래스
+ * 문법강조(Syntax Highlighter) 플러그인 클래스
  *
  * @license GPL2 (http://www.gnu.org/licenses/gpl-2.0.html)
  * @author	chongmyung.park (http://byfun.com)
