@@ -3,8 +3,7 @@
  * 
  * QR코드 플러그인 정보 클래스
  *
- *
- * @license LGPL (http://www.gnu.org/licenses/lgpl.html)
+ * @license GPL2 (http://www.gnu.org/licenses/gpl-2.0.html)
  * @author	chongmyung.park (http://byfun.com)
  */
 

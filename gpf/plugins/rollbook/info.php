@@ -4,6 +4,7 @@
  * 출석부 플러그인 정보
  *
  * 본 프로그램의 수정후 재배포를 금합니다.
+ *
  * @author	byfun (http://byfun.com)
  */
  
@@ -19,10 +20,10 @@ class GPFPluginInfoRollbook extends GPFPluginInfo
 	public function __construct() {				
 		parent::__construct();
 		
-		$this->version = "2013-01-18";
+		$this->version = "2013-02-27";
 		$this->author_name = "byfun";
 		$this->author_homepage = "http://byfun.com";
-		$this->plugin_link = "http://byfun.com/axis/gpf_plugin.php?plugin=rollbook";
+		$this->plugin_link = "http://lovelyus.net/axis/gpf_plugin.php?plugin=출석부";
 		$this->label = "출석부";
 	}
 
@@ -70,28 +71,28 @@ class GPFPluginInfoRollbook extends GPFPluginInfo
 		  `student_id` int(11) NOT NULL,
 		  `stat` enum('X','O') NOT NULL DEFAULT 'O',
 		  PRIMARY KEY (`id`)
-		) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+		) ENGINE=MyISAM;
 
 		CREATE TABLE IF NOT EXISTS `{$rb_prefix}rb_class` (
 		  `id` int(11) NOT NULL AUTO_INCREMENT,
 		  `group_id` int(11) NOT NULL,
 		  `name` varchar(255) NOT NULL,
 		  PRIMARY KEY (`id`)
-		) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+		) ENGINE=MyISAM;
 
 		CREATE TABLE IF NOT EXISTS `{$rb_prefix}rb_group` (
 		  `id` int(11) NOT NULL AUTO_INCREMENT,
 		  `name` varchar(255) NOT NULL,
 		  `archived` tinyint(1) NOT NULL DEFAULT '0',
 		  PRIMARY KEY (`id`)
-		) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+		) ENGINE=MyISAM;
 
 		CREATE TABLE IF NOT EXISTS `{$rb_prefix}rb_rollbook` (
 		  `id` int(11) NOT NULL AUTO_INCREMENT,
 		  `class_id` int(11) NOT NULL,
 		  `date` date NOT NULL,
 		  PRIMARY KEY (`id`)
-		) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+		) ENGINE=MyISAM;
 
 		CREATE TABLE IF NOT EXISTS `{$rb_prefix}rb_student` (
 		  `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -101,14 +102,14 @@ class GPFPluginInfoRollbook extends GPFPluginInfo
 		  `school` varchar(128) NOT NULL COMMENT '학교명',
 		  `grade` varchar(10) NOT NULL COMMENT '학년',
 		  PRIMARY KEY (`id`)
-		) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+		) ENGINE=MyISAM;
 
 		CREATE TABLE IF NOT EXISTS `{$rb_prefix}rb_teacher` (
 		  `id` int(11) NOT NULL AUTO_INCREMENT,
 		  `class_id` int(11) NOT NULL,
 		  `name` varchar(255) NOT NULL,
 		  PRIMARY KEY (`id`)
-		) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+		) ENGINE=MyISAM;
 			
 			  
 EOF;

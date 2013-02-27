@@ -21,10 +21,10 @@ class GPFPluginInfoPopup extends GPFPluginInfo
 	public function __construct() {				
 		parent::__construct();
 		
-		$this->version = "2013-01-18";
+		$this->version = "2013-02-27";
 		$this->author_name = "byfun";
 		$this->author_homepage = "http://byfun.com";
-		$this->plugin_link = "http://byfun.com/axis/gpf_plugin.php?plugin=popup";
+		$this->plugin_link = "http://lovelyus.net/axis/gpf_plugin.php?plugin=팝업";
 		$this->popup_table = $GLOBALS['g4']['table_prefix'] . "topschool_popup"; // 팝업창 관리 테이블
 		$this->label = "팝업관리";
 	}
