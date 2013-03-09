@@ -97,7 +97,7 @@ foreach($plugins as $id => $plugin) {
 			<?=$author_info?>
 		</div>
 		<div class="gpf_auth clearfix">
-		<? $fs = $info->getFunctions(); for($i=0, $to=count($fs); $i<$to; $i++) { echo "<div><a href='http://byfun.com/axis/gpf_help.php?plugin=".$info->id."&item=".$fs[$i]."' target='_blank'>".$fs[$i]."</a></div>";  } ?>
+		<? // $fs = $info->getFunctions(); for($i=0, $to=count($fs); $i<$to; $i++) { echo "<div><a href='http://byfun.com/axis/gpf_help.php?plugin=".$info->id."&item=".$fs[$i]."' target='_blank'>".$fs[$i]."</a></div>";  } ?>
 		</div>
 	</td>
 </tr>

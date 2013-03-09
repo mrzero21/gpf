@@ -100,9 +100,10 @@ class GPFPluginInfoPopup extends GPFPluginInfo
 	 */
 	protected function table_exists ($table) {
 		$mysql_db = $GLOBALS['mysql_db'];
-		$tables = mysql_list_tables ($mysql_db);
-		while (list ($temp) = mysql_fetch_array ($tables)) {
-			if ($temp == $table) {
+
+		$res = sql_query("SHOW TABLES FROM $mysql_db");
+		while ($row = mysql_fetch_array ($res)) {
+			if ($row[0] == $table) {
 				return TRUE;
 			}
 		}
