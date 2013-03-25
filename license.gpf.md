@@ -1,8 +1,13 @@
-프로그램 명칭 : 그누보드 플러그인 프레임워크 (Gnuboard Plugin Framework)
+그누보드 플러그인 프레임워크
+=============================
 
-저작자 : 박총명 http://byfun.com
+
+  - 프로그램 명칭 : 그누보드 플러그인 프레임워크 (Gnuboard Plugin Framework)
+
+  - 저작자 : 박총명 http://byfun.com
 
 라이센스 (License)
+-----------------
 
 번역문 아래에 원문이 있습니다.
 
@@ -12,20 +17,22 @@
 3. 법적인 분쟁이 발생한 경우 저작자의 소재지를 관할하는 관할법원에서 분쟁을 해결합니다.
 4. 이 라이센스 파일 및 내용은 저작자를 제외한 어느 누구도 추가, 수정, 삭제할 수 없습니다.
 
------ GPL 번역문 --------------------------------------------------------
+GPL 번역문
+------------
 
-GNU 일반 공중 사용 허가서
-2판, 1991년 6월 
+	GNU 일반 공중 사용 허가서
+	2판, 1991년 6월 
 
-Copyright (C) 1989, 1991 Free Software Foundation, Inc. 
-59 Temple Place - Suite 330, Boston, MA  02111-1307, USA
-누구든지 본 사용 허가서를 있는 그대로 복제하고 배포할 수
-있습니다. 그러나 본문에 대한 수정은 허용되지 않습니다. 
-
-
+	Copyright (C) 1989, 1991 Free Software Foundation, Inc. 
+	59 Temple Place - Suite 330, Boston, MA  02111-1307, USA
+	누구든지 본 사용 허가서를 있는 그대로 복제하고 배포할 수
+	있습니다. 그러나 본문에 대한 수정은 허용되지 않습니다. 
 
 
-전 문
+
+
+### 전 문
+
 소프트웨어에 적용되는 대부분의 사용 허가서(license)들은 소프트웨어에 대한 수정과 공유의 자유를 제한하려는 것을 그 목적으로 합니다. 그러나 GNU 일반 공중 사용 허가서(이하, ``GPL''이라고 칭합니다.)는 자유 소프트웨어에 대한 수정과 공유의 자유를 모든 사용자들에게 보장하기 위해서 성립된 것입니다. 자유 소프트웨어 재단이 제공하는 대부분의 소프트웨어들은 GPL에 의해서 관리되고 있으며, 몇몇 소프트웨어에는 별도의 사용 허가서인 GNU 라이브러리 일반 공중 사용 허가서(GNU Library General Public License)를 대신 적용하기도 합니다. 자유 소프트웨어란, 이를 사용하려고 하는 모든 사람에 대해서 동일한 자유와 권리가 함께 양도되는 소프트웨어를 말하며 프로그램 저작자의 의지에 따라 어떠한 종류의 프로그램에도 GPL을 적용할 수 있습니다. 따라서 여러분이 만든 프로그램에도 GPL을 적용할 수 있습니다. 
 
 자유 소프트웨어를 언급할 때 사용되는 ``자유''라는 단어는 무료(無料)를 의미하는 금전적인 측면의 자유가 아니라 구속되지 않는다는 관점에서의 자유를 의미하며, GPL은 자유 소프트웨어를 이용한 복제와 개작, 배포와 수익 사업 등의 가능한 모든 형태의 자유를 실질적으로 보장하고 있습니다. 여기에는 원시 코드(source code)의 전부 또는 일부를 원용해서 개선된 프로그램을 만들거나 새로운 프로그램을 창작할 수 있는 자유가 포함되며, 자신에게 양도된 이러한 자유와 권리를 보다 명확하게 인식할 수 있도록 하기 위한 규정도 포함되어 있습니다. 
@@ -111,18 +118,20 @@ GPL은 GPL 안에 소프트웨어를 양도받을 사용자의 권리를 제한�
 
 
 
------ GPL 원문 --------------------------------------------------------
+GPL 원문
+---------
 
-GNU GENERAL PUBLIC LICENSE
-Version 2, June 1991 
+	GNU GENERAL PUBLIC LICENSE
+	Version 2, June 1991 
 
-Copyright (C) 1989, 1991 Free Software Foundation, Inc.  
-59 Temple Place - Suite 330, Boston, MA  02111-1307, USA
+	Copyright (C) 1989, 1991 Free Software Foundation, Inc.  
+	59 Temple Place - Suite 330, Boston, MA  02111-1307, USA
 
-Everyone is permitted to copy and distribute verbatim copies
-of this license document, but changing it is not allowed.
+	Everyone is permitted to copy and distribute verbatim copies
+	of this license document, but changing it is not allowed.
 
-Preamble
+### Preamble
+
 The licenses for most software are designed to take away your freedom to share and change it. By contrast, the GNU General Public License is intended to guarantee your freedom to share and change free software--to make sure the software is free for all its users. This General Public License applies to most of the Free Software Foundation's software and to any other program whose authors commit to using it. (Some other Free Software Foundation software is covered by the GNU Library General Public License instead.) You can apply it to your programs, too. 
 
 When we speak of free software, we are referring to freedom, not price. Our General Public Licenses are designed to make sure that you have the freedom to distribute copies of free software (and charge for this service if you wish), that you receive source code or can get it if you want it, that you can change the software or use pieces of it in new free programs; and that you know you can do these things. 
@@ -204,4 +213,3 @@ NO WARRANTY
 
 END OF TERMS AND CONDITIONS
 
------ 끝 --------------------------------------------------------
