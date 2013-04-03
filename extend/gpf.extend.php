@@ -7,6 +7,7 @@
  * @author	byfun (http://byfun.com)
  * @filesource
  */
+
 define("GPF_PATH", $g4['path']."/gpf");
 define("GPF_URL", $g4['url']."/gpf");
 
