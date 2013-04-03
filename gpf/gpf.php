@@ -10,10 +10,13 @@ if (!defined("_GNUBOARD_")) exit; // 개별 페이지 접근 불가
 
 define("GPF", "Gnuboard Plugin Framework");
 
-include_once GPF_PATH."/lib/gpf.GPF.class.php";
 
 // Gnuboard Plugin Framework Helper
-$gpf = GPF::getInstance();
+if(!defined("NO_GPF")) 
+{
+	include_once GPF_PATH."/lib/gpf.GPF.class.php";
+	$gpf = GPF::getInstance();
+}
 
 
 
@@ -66,6 +69,7 @@ $gpf = GPF::getInstance();
  * @param mixed $array 값
  */
 function gpf_trigger($event, $params = array()) {	
+	if(defined("NO_GPF")) return;
 	return GPF::getInstance()->trigger($event, $params); 
 }
 

@@ -7,8 +7,6 @@
  * @author	byfun (http://byfun.com)
  * @filesource
  */
-if(defined("NO_GPF")) return;
-
 define("GPF_PATH", $g4['path']."/gpf");
 define("GPF_URL", $g4['url']."/gpf");
 
@@ -26,25 +24,28 @@ define("GPF_INTERCEPT_SKIN", ".gpf");
 define("GPF_PRE_EVENT_PREFIX", "PRE_");
 define("GPF_POST_EVENT_PREFIX", "POST_");
 
-// <g4>/bbs 에서 include 할때만 board_skin_path 를 intercept 함
-if(getcwd() == realpath($g4['bbs_path']) && !defined("NO_GPF_SKIN_INTERCEPT") )
+if(!defined("NO_GPF")) 
 {
-	$board_skin_path = GPF_INC_SKIN_PATH;
-}
-
-if(!file_exists(getcwd() . "/admin.lib.php")) {	// except if current path is 'adm' folder in g4
-
-	if($config['cf_member_skin'] != GPF_INTERCEPT_SKIN) 
+	// <g4>/bbs 에서 include 할때만 board_skin_path 를 intercept 함
+	if(getcwd() == realpath($g4['bbs_path']) && !defined("NO_GPF_SKIN_INTERCEPT") )
 	{
-		define("GPF_MEMBER_SKIN", $config['cf_member_skin']);	// 회원 스킨 인터셉트를 위해
-		$config['cf_member_skin'] = GPF_INTERCEPT_SKIN;
+		$board_skin_path = GPF_INC_SKIN_PATH;
 	}
 
+	if(!file_exists(getcwd() . "/admin.lib.php")) {	// except if current path is 'adm' folder in g4
 
-	if($config['cf_search_skin'] != GPF_INTERCEPT_SKIN) 
-	{
-		define("GPF_SEARCH_SKIN", $config['cf_search_skin']);	// 검색 스킨 인터셉트를 위해
-		$config['cf_search_skin'] = GPF_INTERCEPT_SKIN;
+		if($config['cf_member_skin'] != GPF_INTERCEPT_SKIN) 
+		{
+			define("GPF_MEMBER_SKIN", $config['cf_member_skin']);	// 회원 스킨 인터셉트를 위해
+			$config['cf_member_skin'] = GPF_INTERCEPT_SKIN;
+		}
+
+
+		if($config['cf_search_skin'] != GPF_INTERCEPT_SKIN) 
+		{
+			define("GPF_SEARCH_SKIN", $config['cf_search_skin']);	// 검색 스킨 인터셉트를 위해
+			$config['cf_search_skin'] = GPF_INTERCEPT_SKIN;
+		}
 	}
 }
 
