@@ -7,6 +7,7 @@
  * @author	byfun (http://byfun.com)
  * @filesource
  */
+if(defined("NO_GPF")) return;
 
 define("GPF_PATH", $g4['path']."/gpf");
 define("GPF_URL", $g4['url']."/gpf");
@@ -26,7 +27,7 @@ define("GPF_PRE_EVENT_PREFIX", "PRE_");
 define("GPF_POST_EVENT_PREFIX", "POST_");
 
 // <g4>/bbs 에서 include 할때만 board_skin_path 를 intercept 함
-if(getcwd() == realpath($g4['bbs_path']))
+if(getcwd() == realpath($g4['bbs_path']) && !defined("NO_GPF_SKIN_INTERCEPT") )
 {
 	$board_skin_path = GPF_INC_SKIN_PATH;
 }
