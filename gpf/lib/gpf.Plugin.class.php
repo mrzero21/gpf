@@ -29,12 +29,40 @@ class GPFPlugin
 	public $use_filter = true;
 
 	/**
+	 * 
+	 * @var 플러그인 경로
+	 */
+	public $plugin_path;
+
+	/**
+	 * 
+	 * @var 플러그인 URL
+	 */
+	public $plugin_url;
+
+	/**
+	 * 
+	 * @var 데이터 저장 경로
+	 */
+	public $data_path;
+
+	/**
+	 * 
+	 * @var 데이터 저장 URL
+	 */
+	public $data_url;
+
+	/**
 	 * 생성자
 	 */
 	public function __construct() {
 		$class_name = substr(get_class($this), 9);
 		$class_name{0} = strtolower($class_name{0});
 		$this->id = $class_name;
+		$this->plugin_path = GPF_PATH."/plugins/".$this->id;
+		$this->plugin_url = GPF_URL."/plugins/".$this->id;
+		$this->data_path = GPF_PATH."/data/plugins/".$this->id;
+		$this->data_url = GPF_URL."/data/plugins/".$this->id;
 	}
 
 	public function regist($p) {}
@@ -42,19 +70,21 @@ class GPFPlugin
 	/**
 	 *
 	 * 플러그인 데이터 저장 경로 반환 (<gpf>/data/plugins/plugin_id)
+	 * @deprecated
 	 */
 	public function getDataPath()
 	{	
-		return GPF_PATH."/data/plugins/".$this->id;
+		return $this->data_path;
 	}
 
 	/**
 	 *
 	 * 플러그인 경로 반환 (<gpf>/plugins/plugin_id)
+	 * @deprecated
 	 */
 	public function getPluginPath()
 	{
-		return GPF_PATH."/plugins/".$this->id;
+		return $this->plugin_path;
 	}
 
 
