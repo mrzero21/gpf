@@ -8,14 +8,20 @@
  * @filesource
  */
 
-include_once $g4['path'] . "/gpf/gpf.php";
+define("GPF_PATH", $g4['path']."/gpf");
+define("GPF_URL", $g4['url']."/gpf");
+
+
+define("GPF_ADMIN_PATH", $g4['admin_path']."/gpf");
+define("GPF_ADMIN_URL", $g4['url']."/adm/gpf");
+
+define("GPF_SKIN_PATH", $board_skin_path);
+define("GPF_SKIN_URL", $g4['url']."/board/skin/".basename($board_skin_path));
+
+define("GPF_INC_SKIN_PATH", $g4['path']."/gpf/inc/skin");
+define("GPF_INC_SKIN_URL", $g4['url']."/gpf/inc/skin");
 
 define("GPF_INTERCEPT_SKIN", ".gpf");
-define("GPF_ADMIN_PATH", $g4['admin_path']."/gpf");
-
-define("GPF_SKIN_PATH", $board_skin_path); // 게시판 스킨 인터셉트를 위해
-define("GPF_INC_SKIN_PATH", $g4['path']."/gpf/inc/skin");
-
 define("GPF_PRE_EVENT_PREFIX", "PRE_");
 define("GPF_POST_EVENT_PREFIX", "POST_");
 
@@ -41,5 +47,6 @@ if(!file_exists(getcwd() . "/admin.lib.php")) {	// except if current path is 'ad
 	}
 }
 
+include_once $g4['path'] . "/gpf/gpf.php";
 
 ?>
