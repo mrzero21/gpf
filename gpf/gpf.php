@@ -8,10 +8,7 @@
 
 if (!defined("_GNUBOARD_")) exit; // 개별 페이지 접근 불가 
 
-define("GPF", "Gnuboard Plugin Framework");
-
-
-// Gnuboard Plugin Framework Helper
+// Gnuboard Plugin Framework
 if(!defined("NO_GPF")) 
 {
 	include_once GPF_PATH."/lib/gpf.GPF.class.php";
